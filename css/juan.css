@@ -83,6 +83,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 10px;
   }
   .row .article-entry .story .user .avatar {
     display: block;

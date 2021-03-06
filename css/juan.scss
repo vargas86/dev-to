@@ -80,17 +80,18 @@ $boder-color:#dedede;
                                 padding: 20px;
                                 .user {
                                     display: flex;
-                                    .avatar {
-                                        display: block;
-                                        height: 30px;
-                                        width: 30px;
-                                        margin-right: 10px;
-                                            img.icon-avatar {
-                                                border: thin solid $boder-color;
-                                                border-radius: 15px;
-                                                width: 100%;
-                                            }
-                                    }
+                                    margin-bottom: 10px;
+                                        .avatar {
+                                            display: block;
+                                            height: 30px;
+                                            width: 30px;
+                                            margin-right: 10px;
+                                                img.icon-avatar {
+                                                    border: thin solid $boder-color;
+                                                    border-radius: 15px;
+                                                    width: 100%;
+                                                }
+                                        }
                                         p {
                                             display: block;
 
