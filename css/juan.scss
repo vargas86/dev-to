@@ -1,32 +1,69 @@
 @media only screen and (min-width: 0px) { 
+
+
+            .subnav {
+                display: flex;
+                padding: 10px 10px 4px;
+                justify-content: start;
+                height: 35px;
+                
+                    H1 {
+                        color: black;
+                        font-size: 23px;
+                        margin-right: auto;
+                        padding: 10px 0;
+                    }
+                    .subnav-bar {
+                        display: flex;
+                        a {
+                            padding: 10px;
+                            color: black;
+                            height: 20px;
+                            &.active{ 
+                                border-bottom: 3px solid blue;
+                                padding: 10px 0px;
+                                    &:hover {
+                                        padding: 10px 10px;
+                                        background-color: #174ece14;
+                                        border-radius: 6px 6px 0px 0px;
+                                    }
+                            }
+                            &:hover {
+                                border-bottom: 3px solid blue;
+                            }
+                        }
+                    }
+            }
             .row{
                 display: block;
-                padding: 5px;
-                margin: 5px;
+                padding: 0px;
+                margin: 0px;
                 width: auto;
                 height: auto;
                     .article-entry {
-                        margin: 20px auto;
+                        margin: 5px auto;
                         display: block;
                         height: auto;
                         min-height: 650px;
-                        border-radius: 5px;
-                        box-shadow: 1px 3px 4px #8f8f8f;
                         background-color: white;
                             .cover {
-                                border-radius: 5px 5px 0px 0;
+                                border-radius: 0;
                                 height: 273px;
                                 display: block;
-                                background-color: red;
-                                background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--S2f8n0g4--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/i4rttdp19eqxrthfzx40.png)
+                                background-color: #f9fafa;
+                                &#uno {
+                                    background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--S2f8n0g4--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/i4rttdp19eqxrthfzx40.png)
+                                }
+                                &#dos {
+                                    background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--PeW_eXkH--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/oqig5zbu2m4pucvl94o2.png)
+                                }
+
                             }
                             .story {
                                 display: block;
                                 padding: 20px;
                                 .user {
-                        
                                 }
-
                                 .tag {
                                     ul {
                                         color: #b4b4b4;
@@ -58,41 +95,77 @@
                                     .btn-social {
                                         display: block;
                                     }
-
                             }
                             .comments {
                                 display: block;
+                                padding: calc(100%/50*2);
+                                .user-comment {}
                             }      
+                    }
+                    .card-article {
+                        box-shadow: none !important;
+                        background-color: #f9fafa;
+                        border: thin solid #dedede;
+                        border-radius: 7px !important;
+                        height: auto;
+                        min-height: 200px;
+                        margin-top: 5px !important;
+                            .card-btn {
+                                display: flex;
+                                justify-content: flex-end;
+                                padding: 10px;
+                            }
+                            .card-news {
+                                height: auto;
+                                padding: 10px;
+                                border-top: thin solid #dedede;
+                            }
+                            .card-create-listing {
+                                height: auto;
+                                padding: 10px;
+                                border-top: thin solid #dedede;
+                                text-align: center;
+                                    a {
+                                        text-decoration: none;
+                                        color: black;
+                                            &:hover {
+                                                color: purple;
+                                            }
+
+                                    }
+                            }
+                    }
+            }
+}
+@media only screen and (min-width: 800px) { 
+            .row{
+                padding: 5px;
+                margin: 5px;
+                    .article-entry {
+                        margin: 0px auto 19px;
+                        display: block;
+                        border-radius: 5px;
+                        box-shadow: 1px 3px 4px #8f8f8f;
+                            .cover {
+                                display: block;
+                                border-radius: 5px 5px 0px 0;
+
+                            }
+                            .story {
+                                display: block;
+                                .user {
+                                    h3 {}
+                                    p {}
+                                }
+                                h2 {}
+                                .tag {}
+                            }
+                            .comments {
+                                display: block;
+                            }
                     }
 
             }
-
-    
-}
-
-
-@media only screen and (min-width: 700px) { 
-
-    .article-entry {
-        display: block;
-            .cover {
-                display: block;
-
-            }
-            .story {
-                display: block;
-                .user {
-                    h3 {}
-                    p {}
-                }
-                h2 {}
-                .tag {}
-            }
-            .comments {
-                display: block;
-            }
-    }
-
 
 }
 

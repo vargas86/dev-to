@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  color: black;
 }
 
 body {
@@ -24,7 +25,7 @@ h3 {
   .section-uno {
     width: auto;
     height: auto;
-    padding: 0 100px;
+    padding: 0;
   }
   .section-uno .container {
     display: -webkit-box;
@@ -32,14 +33,30 @@ h3 {
     display: flex;
     width: 100%;
   }
-  .section-uno .container .column-uno, .section-uno .container .column-tres {
-    display: block;
-    width: calc((100%/12)*3);
+  .section-uno .container .column-uno {
+    display: none;
+    width: calc((100%/12)*2);
   }
   .section-uno .container .column-dos {
     display: block;
-    width: calc((100%/12)*6);
+    width: auto;
     height: auto;
+  }
+  .section-uno .container .column-tres {
+    display: none;
+    width: calc((100%/12)*3);
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .section-uno {
+    padding: 0 100px;
+  }
+  .section-uno .container .column-uno, .section-uno .container .column-tres {
+    display: block;
+  }
+  .section-uno .container .column-dos {
+    width: calc((100%/12)*7);
   }
 }
 /*# sourceMappingURL=styles.css.map */

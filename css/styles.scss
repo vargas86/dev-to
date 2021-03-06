@@ -2,6 +2,7 @@
 * {
     margin:0;
     padding:0;
+    color: black;
 }
 
 body {
@@ -17,19 +18,25 @@ h3 {font-size: 10px;}
     .section-uno{
         width: auto;
         height: auto;
-        padding: 0 100px;
+        padding: 0;
         .container {
             display: flex;
             width: 100%;
-                .column-uno, .column-tres {
-                    display: block;
-                    width: calc((100%/12)*3);
+                .column-uno {
+                    display: none;
+                    width: calc((100%/12)*2);
 
                 }
                 .column-dos {
                     display: block;
-                    width: calc((100%/12)*6);
+                    width: auto;
                     height: auto;
+                }
+
+                .column-tres {
+                    display: none;
+                    width: calc((100%/12)*3);
+
                 }
         }
     }
@@ -37,14 +44,16 @@ h3 {font-size: 10px;}
 
 
 @media only screen and (min-width: 700px) { 
-    .section-uno{
+    .section-uno {
+        padding: 0 100px;
 
         .container {
   
                 .column-uno, .column-tres {
-    
+                    display: block;
                 }
                 .column-dos {
+                    width: calc((100%/12)*7);
 
 
                 }
