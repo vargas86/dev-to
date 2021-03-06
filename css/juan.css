@@ -1,1 +1,19 @@
-/* No CSS *//*# sourceMappingURL=juan.css.map */
+@media only screen and (min-width: 0px) {
+  .column-dos {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .column-dos {
+    display: block;
+  }
+  .column-dos .row articule {
+    background-color: gray;
+  }
+  .column-dos .row articule .cover {
+    background-color: red;
+    background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--S2f8n0g4--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/i4rttdp19eqxrthfzx40.png);
+  }
+}
+/*# sourceMappingURL=juan.css.map */

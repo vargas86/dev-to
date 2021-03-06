@@ -1,4 +1,33 @@
-@media only screen and (min-width: 0px) { }
+@media only screen and (min-width: 0px) { 
+    .column-dos {
+        display: block;
+            articule {
+                .cover {}
+                .story {}
+                .comments {}
+            }
+    }
+}
 
 
-@media only screen and (min-width: 700px) { }
+@media only screen and (min-width: 700px) { 
+    .column-dos {
+        display: block;
+            .row {
+                articule {
+                    background-color: gray;
+                        .cover {
+                            background-color: red;
+                            background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--S2f8n0g4--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/i4rttdp19eqxrthfzx40.png);
+                        }
+                        .story {
+
+                        }
+                        .comments {
+                                
+                        }
+                }
+            }
+    }
+    
+}
