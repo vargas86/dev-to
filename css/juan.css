@@ -80,6 +80,22 @@
     padding: 20px;
   }
   .row .article-entry .story .user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .row .article-entry .story .user .avatar {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+  .row .article-entry .story .user .avatar img.icon-avatar {
+    border: thin solid #dedede;
+    border-radius: 15px;
+    width: 100%;
+  }
+  .row .article-entry .story .user p {
     display: block;
   }
   .row .article-entry .story .tag {
@@ -120,6 +136,9 @@
   }
   .row .article-entry .story .social-interaction #save {
     display: block;
+  }
+  .row .article-entry .story .social-interaction #read {
+    font-size: 10px;
   }
   .row .article-entry .story .btn-social {
     display: block;

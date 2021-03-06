@@ -1,5 +1,6 @@
 $black: #000000;
 $blue: rgb(25, 25, 205);
+$boder-color:#dedede; 
 
 @media only screen and (min-width: 0px) { 
 
@@ -78,7 +79,23 @@ $blue: rgb(25, 25, 205);
                                 display: block;
                                 padding: 20px;
                                 .user {
-                                    display: block;
+                                    display: flex;
+                                    .avatar {
+                                        display: block;
+                                        height: 30px;
+                                        width: 30px;
+                                        margin-right: 10px;
+                                            img.icon-avatar {
+                                                border: thin solid $boder-color;
+                                                border-radius: 15px;
+                                                width: 100%;
+                                            }
+                                    }
+                                        p {
+                                            display: block;
+
+                                        }
+ 
                                 }
                                 .tag {
                                     display: block;
@@ -110,6 +127,10 @@ $blue: rgb(25, 25, 205);
                                         #save {
                                             display: block;
                                         }
+                                        #read {
+                                           font-size:10px; 
+                                        }
+
                                 }
                                     .btn-social {
                                         display: block;
@@ -141,7 +162,7 @@ $blue: rgb(25, 25, 205);
                     .card-article {
                         box-shadow: none !important;
                         background-color: #f9fafa;
-                        border: thin solid #dedede;
+                        border: thin solid $boder-color;
                         border-radius: 7px !important;
                         height: auto;
                         min-height: 200px;
@@ -154,7 +175,7 @@ $blue: rgb(25, 25, 205);
                             .card-news {
                                 height: auto;
                                 padding: 10px;
-                                border-top: thin solid #dedede;
+                                border-top: thin solid $boder-color;
                             }
                             .card-create-listing {
                                 height: auto;
