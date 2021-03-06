@@ -1,33 +1,103 @@
 @media only screen and (min-width: 0px) { 
-    .column-dos {
-        display: block;
-            articule {
-                .cover {}
-                .story {}
-                .comments {}
+            .row{
+                display: block;
+                padding: 5px;
+                margin: 5px;
+                width: auto;
+                height: auto;
+                    .article-entry {
+                        margin: 20px auto;
+                        display: block;
+                        height: auto;
+                        min-height: 650px;
+                        border-radius: 5px;
+                        box-shadow: 1px 3px 4px #8f8f8f;
+                        background-color: white;
+                            .cover {
+                                border-radius: 5px 5px 0px 0;
+                                height: 273px;
+                                display: block;
+                                background-color: red;
+                                background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--S2f8n0g4--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/i4rttdp19eqxrthfzx40.png)
+                            }
+                            .story {
+                                display: block;
+                                padding: 20px;
+                                .user {
+                        
+                                }
+
+                                .tag {
+                                    ul {
+                                        color: #b4b4b4;
+                                        list-style: none;
+                                        display: flex;
+                                        font-weight: 300;
+                                        margin: 5px 0;
+                                        padding: 0;
+                                            li {
+                                                margin: 0 5px;
+                                                color: #cdcdcd;
+                                                font-size: 15px;
+                                                &:hover {
+                                                    color:#454444;
+                                                }
+                                            }
+                                    }
+                                }
+                                .social-interaction {
+                                    display: flex;
+                                    justify-content: start;
+                                        #reaction, #read {margin-right: 5px;}
+                                        #comment {
+                                            display: block;
+                                            margin-right: auto;
+                                        }
+                                        #save {}
+                                }
+                                    .btn-social {
+                                        display: block;
+                                    }
+
+                            }
+                            .comments {
+                                display: block;
+                            }      
+                    }
+
             }
-    }
+
+    
 }
 
 
 @media only screen and (min-width: 700px) { 
-    .column-dos {
-        display: block;
-            .row {
-                articule {
-                    background-color: gray;
-                        .cover {
-                            background-color: red;
-                            background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--S2f8n0g4--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/i4rttdp19eqxrthfzx40.png);
-                        }
-                        .story {
 
-                        }
-                        .comments {
-                                
-                        }
+    .article-entry {
+        display: block;
+            .cover {
+                display: block;
+
+            }
+            .story {
+                display: block;
+                .user {
+                    h3 {}
+                    p {}
                 }
+                h2 {}
+                .tag {}
+            }
+            .comments {
+                display: block;
             }
     }
-    
+
+
 }
+
+
+
+
+
+  
