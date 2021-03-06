@@ -1,3 +1,6 @@
+$black: #000000;
+$blue: rgb(25, 25, 205);
+
 @media only screen and (min-width: 0px) { 
 
 
@@ -8,7 +11,7 @@
                 height: 35px;
                 
                     H1 {
-                        color: black;
+                        color: $black;
                         font-size: 23px;
                         margin-right: auto;
                         padding: 10px 0;
@@ -17,10 +20,10 @@
                         display: flex;
                         a {
                             padding: 10px;
-                            color: black;
+                            color: $black;
                             height: 20px;
                             &.active{ 
-                                border-bottom: 3px solid blue;
+                                border-bottom: 3px solid $blue;
                                 padding: 10px 0px;
                                     &:hover {
                                         padding: 10px 10px;
@@ -48,14 +51,26 @@
                         background-color: white;
                             .cover {
                                 border-radius: 0;
-                                height: 273px;
                                 display: block;
                                 background-color: #f9fafa;
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                padding-bottom: 43%;
                                 &#uno {
                                     background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--S2f8n0g4--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/i4rttdp19eqxrthfzx40.png)
                                 }
                                 &#dos {
                                     background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--PeW_eXkH--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/oqig5zbu2m4pucvl94o2.png)
+                                }
+                                &#tres {
+                                    background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--6rFGdRJR--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9gc18fb42jzilijelslx.png)
+                                }
+                                &#cuatro {
+                                    background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--nZ_KByFJ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/q9neiq2xdcavi1nd01gt.png)
+                                }
+                                &#cinco {
+                                    background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--JwBTps9H--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/jkx6stw11np6wntvpi6n.png)
                                 }
 
                             }
@@ -63,8 +78,10 @@
                                 display: block;
                                 padding: 20px;
                                 .user {
+                                    display: block;
                                 }
                                 .tag {
+                                    display: block;
                                     ul {
                                         color: #b4b4b4;
                                         list-style: none;
@@ -90,16 +107,35 @@
                                             display: block;
                                             margin-right: auto;
                                         }
-                                        #save {}
+                                        #save {
+                                            display: block;
+                                        }
                                 }
                                     .btn-social {
                                         display: block;
+                                        background: white;
+                                        border: none;
+                                        padding: 5px 12px;
+                                        font-size: 15px;
+                                            &:hover {
+                                                background: #eef0f1;
+                                                border-radius: 6px;
+                                            }
+                                    }
+                                    .active {
+                                        background-color: #d9d9d9 !important;
+                                        border-radius: 6px;
+                                            &:hover {
+                                                background: #bbbbbb !important;
+                                            }
                                     }
                             }
                             .comments {
                                 display: block;
                                 padding: calc(100%/50*2);
-                                .user-comment {}
+                                .user-comment {
+                                    display: block;
+                                }
                             }      
                     }
                     .card-article {
@@ -178,11 +214,11 @@
                             .story {
                                 display: block;
                                 .user {
-                                    h3 {}
-                                    p {}
+                                    h3 {display: block;}
+                                    p {display: block;}
                                 }
-                                h2 {}
-                                .tag {}
+                                h2 {display: block;}
+                                .tag {display: block;}
                             }
                             .comments {
                                 display: block;
