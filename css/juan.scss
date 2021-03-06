@@ -134,6 +134,30 @@
 
                                     }
                             }
+                            .card-btn-tag {
+                                display: block;
+                                H2 {
+                                    font-size: 15px;
+                                    padding: 0 10px;
+
+                                }
+                            }
+                            .card-topic-icon {
+                                display: block;
+                                background: #3c4adf;
+                                color: white;
+                                border-radius: 4px;
+                                width: 14%;
+                                font-size: 12px;
+                                padding: 1px;
+                                text-align: center;
+                                font-family: 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+                            }
+                            .card-comment {
+                                display: block;
+                                font-size: 14px;
+                                color: gray;
+                            }
                     }
             }
 }

@@ -144,6 +144,29 @@
   .row .card-article .card-create-listing a:hover {
     color: purple;
   }
+  .row .card-article .card-btn-tag {
+    display: block;
+  }
+  .row .card-article .card-btn-tag H2 {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+  .row .card-article .card-topic-icon {
+    display: block;
+    background: #3c4adf;
+    color: white;
+    border-radius: 4px;
+    width: 14%;
+    font-size: 12px;
+    padding: 1px;
+    text-align: center;
+    font-family: 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+  }
+  .row .card-article .card-comment {
+    display: block;
+    font-size: 14px;
+    color: gray;
+  }
 }
 
 @media only screen and (min-width: 800px) {
