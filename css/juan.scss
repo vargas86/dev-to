@@ -86,7 +86,7 @@ $boder-color:#dedede;
                                             height: 30px;
                                             width: 30px;
                                             margin-right: 10px;
-                                                img.icon-avatar {
+                                                .icon-avatar {
                                                     border: thin solid $boder-color;
                                                     border-radius: 15px;
                                                     width: 100%;
@@ -97,6 +97,14 @@ $boder-color:#dedede;
 
                                         }
  
+                                }
+
+
+                                        p {
+                                            display: block;
+
+                                        }
+
                                 }
                                 .tag {
                                     display: block;
@@ -155,10 +163,22 @@ $boder-color:#dedede;
                             .comments {
                                 display: block;
                                 padding: calc(100%/50*2);
-                                .user-comment {
-                                    display: block;
-                                }
-                            }      
+                                background-color: #eef0f1;
+                                    .user-comment {
+                                        display: flex;
+                                        margin-bottom: 10px;
+                                            .avatar-comment {
+                                                display: block;
+                                                height: 30px;
+                                                width: 30px;
+                                                margin-right: 10px;
+                                                    .icon-avatar-comment {
+                                                        border: thin solid $boder-color;
+                                                        border-radius: 15px;
+                                                        width: 100%;
+                                                    }
+                                            }
+                                    }      
                     }
                     .card-article {
                         box-shadow: none !important;
@@ -228,6 +248,7 @@ $boder-color:#dedede;
                         display: block;
                         border-radius: 5px;
                         box-shadow: 1px 3px 4px #8f8f8f;
+                        padding-bottom: 1px;
                             .cover {
                                 display: block;
                                 border-radius: 5px 5px 0px 0;
@@ -244,6 +265,7 @@ $boder-color:#dedede;
                             }
                             .comments {
                                 display: block;
+                                margin: 10px;
                             }
                     }
 
