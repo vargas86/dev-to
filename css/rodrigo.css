@@ -1,7 +1,11 @@
+.menunav {
+  background-color: #f8f8f8;
+  height: 50px;
+}
+
 @media only screen and (min-width: 700px) {
   .menunav {
-    background-color: #fcfcfc;
-    height: 100px;
+    height: 50px;
   }
 }
 /*# sourceMappingURL=rodrigo.css.map */
