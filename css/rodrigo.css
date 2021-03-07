@@ -1,1 +1,7 @@
-/* No CSS *//*# sourceMappingURL=rodrigo.css.map */
+@media only screen and (min-width: 700px) {
+  .menunav {
+    background-color: red;
+    height: 100px;
+  }
+}
+/*# sourceMappingURL=rodrigo.css.map */
