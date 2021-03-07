@@ -1,1 +1,62 @@
-/* No CSS *//*# sourceMappingURL=brisset.css.map */
+@media only screen and (min-width: 0px) {
+  .column-uno {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .column-uno {
+    width: 25vw;
+    padding-left: 2rem;
+    display: block;
+  }
+  .More {
+    margin-top: 1rem;
+    padding-left: 2rem;
+  }
+  .redesSociales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+  .myTag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 7rem;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .img-2 {
+    background-image: url(../img/57390242_386431405416711_440644832181536446_n.jpg__nc_ht=scontent-lga3-1.cdninstagram.com);
+    width: 340px;
+    height: 260px;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  .tex-img {
+    text-align: center;
+    color: blue;
+    cursor: pointer;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    margin-bottom: 2rem;
+  }
+  .pegatinas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+/*# sourceMappingURL=brisset.css.map */
