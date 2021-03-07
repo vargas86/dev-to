@@ -1,17 +1,15 @@
 @media only screen and (min-width: 0px) { 
-    .column-uno{
-        display: none;
-    }
+
 }
 
 
 
 @media only screen and (min-width: 700px) {
-    .column-uno{
+/*    .column-uno{
         width: 25vw;
         padding-left: 2rem;
         display: block;
-    }
+    }*/
 
     .More{
         margin-top: 1rem;
@@ -19,28 +17,20 @@
 
     }
 
-    .redesSociales{
+    .redesSociales {
         display: flex;
         margin-bottom: 2rem;
         margin-top: 2rem;
     }
 
-    .myTag{
+    .myTag {
         display: flex;
         margin-bottom: 7rem;
         justify-content: space-between;
     }
 
-    .img-2{
-        background-image: url(../img/57390242_386431405416711_440644832181536446_n.jpg__nc_ht=scontent-lga3-1.cdninstagram.com);
-        width: 340px;
-        height: 260px;
-        background-repeat: no-repeat;
-        border-radius: 10px;
-        margin-bottom: 2rem;
-    }
 
-    .tex-img{
+    .tex-img {
         text-align: center;
         color: blue;
         cursor: pointer;
@@ -48,10 +38,24 @@
         margin-bottom: 2rem;
     }
 
-    .pegatinas{
+    .pegatinas {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: auto;
+        height: auto;
+
+            .img-2{
+                background-image: url(../img/57390242_386431405416711_440644832181536446_n.jpg__nc_ht=scontent-lga3-1.cdninstagram.com);
+                width: 100%;
+                height: auto;
+                min-height: 300px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                border-radius: 10px;
+                margin-bottom: 5px;
+            }
         
     }
 
