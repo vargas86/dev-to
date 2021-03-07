@@ -37,6 +37,7 @@ h3 {
   .section-uno .container .column-uno {
     display: none;
     width: calc((100%/12)*2);
+    margin-right: 10px;
   }
   .section-uno .container .column-dos {
     display: block;
