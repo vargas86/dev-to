@@ -46,19 +46,53 @@ h3 {font-size: 10px;}
 
 @media only screen and (min-width: 700px) { 
     .section-uno {
-        padding: 0 100px;
+        padding: 0;
 
         .container {
-  
-                .column-uno, .column-tres {
-                    display: block;
+            display: flex;
+            width: 100%;
+                .column-uno {
+                    display: none;
+                    width: calc((100%/12)*2);
+
                 }
                 .column-dos {
-                    width: calc((100%/12)*7);
-
-
+                    display: block;
+                    width: auto;
+                    height: auto;
                 }
 
+                .column-tres {
+                    display: none;
+                    width: calc((100%/12)*3);
+
+                }
         }
+    }
+}
+
+@media only screen and (min-width: 1000px) { 
+    .section-uno {
+        padding: 0 calc((100%/100)*1);
+        .container {
+  
+            .column-uno, .column-tres {
+                display: block;
+            }
+            .column-dos {
+                width: calc((100%/12)*7);
+
+
+            }
+
+    }
+        
+    }
+}
+
+
+@media only screen and (min-width: 1200px) { 
+    .section-uno {
+        padding: 0 calc((100%/100)*3);
     }
 }

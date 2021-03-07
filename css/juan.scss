@@ -162,7 +162,7 @@ $boder-color:#dedede;
                             }
                             .comments {
                                 display: block;
-                                padding: calc(100%/50*2);
+                                padding: 10px 10px 1px 10px;
                                 background-color: #eef0f1;
                                     .user-comment {
                                         display: flex;
@@ -177,8 +177,16 @@ $boder-color:#dedede;
                                                         border-radius: 15px;
                                                         width: 100%;
                                                     }
+                                            }       
+                                    }
+                                    p {
+                                        margin: 5px 0 25px;
+                                            &:nth-of-type(2) {
+                                                margin: 5px 0 15px;
                                             }
-                                    }      
+    font-size: 15px;
+    color: #454444;
+                                    }
                     }
                     .card-article {
                         box-shadow: none !important;
@@ -274,7 +282,9 @@ $boder-color:#dedede;
 }
 
 
+@media only screen and (min-width: 1200px) { 
 
+}
 
 
   
