@@ -137,6 +137,15 @@
   .row .article-entry .cover#cinco {
     background-image: url(https://res.cloudinary.com/practicaldev/image/fetch/s--JwBTps9H--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/jkx6stw11np6wntvpi6n.png);
   }
+  .row .article-entry #article-box.story {
+    display: block;
+  }
+  .row .article-entry #article-box.story .title-title {
+    display: block;
+  }
+  .row .article-entry #article-box.story .title-title H1 {
+    font-size: 55px !important;
+  }
   .row .article-entry .story {
     display: block;
     /*padding: 20px;*/
@@ -380,20 +389,27 @@
     display: block;
     border-radius: 5px 5px 0px 0;
   }
-  .row .article-entry .story {
+  .row .article-entry #article-box.story {
     display: block;
     padding: 20px;
   }
-  .row .article-entry .story .user h3 {
+  .row .article-entry #article-box.story .user h3 {
     display: block;
   }
-  .row .article-entry .story .user p {
+  .row .article-entry #article-box.story .user p {
     display: block;
   }
-  .row .article-entry .story h2 {
+  .row .article-entry #article-box.story .title-title {
+    display: block !important;
+  }
+  .row .article-entry #article-box.story .title-title h1 {
+    display: block;
+    font-size: 55px !important;
+  }
+  .row .article-entry #article-box.story h2 {
     display: block;
   }
-  .row .article-entry .story .tag {
+  .row .article-entry #article-box.story .tag {
     display: block;
   }
   .row .article-entry .comments {
