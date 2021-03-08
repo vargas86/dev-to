@@ -55,6 +55,9 @@
     background-position: center;
     border-radius: 10px;
     margin-bottom: 5px;
+    cursor: pointer;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
   }
 }
 /*# sourceMappingURL=brisset.css.map */
