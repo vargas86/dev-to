@@ -1,4 +1,29 @@
 @media only screen and (min-width: 0px) {
+  .mobile-icons-bottom {
+    width: auto;
+    background-color: whitesmoke;
+    height: auto;
+    padding: 15px 25px 15px;
+    border-top: thin solid #dedede;
+  }
+  .mobile-icons-bottom .icon-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  .mobile-icons-bottom .icon-list .icon-box {
+    display: contents;
+  }
+  .mobile-icons-bottom .icon-list .icon-box .icon {
+    display: block;
+  }
   .subnav-mobile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -224,8 +249,6 @@
   }
   .row .comments p {
     margin: 5px 0 25px;
-    font-size: 15px;
-    color: #454444;
   }
   .row .comments p:nth-of-type(2) {
     margin: 5px 0 15px;
@@ -244,7 +267,7 @@
   .row .card-article .card-topic {
     display: block;
     font-size: 14px;
-    color: gray;
+    color: #717171;
   }
   .row .card-article .card-btn {
     display: -webkit-box;
@@ -301,7 +324,35 @@
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 768px) {
+  .icon-list {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+    height: 400px;
+    position: fixed;
+    padding: 25px;
+  }
+  .icon-list .icon-box {
+    display: -ms-grid;
+    display: grid;
+    gap: initial;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+  }
+  .icon-list .icon-box .icon {
+    display: block;
+  }
+  .icon-list .icon-box .icon p {
+    font-size: 14px;
+    text-align: center;
+    color: #717171;
+  }
   .subnav-mobile {
     display: none;
   }

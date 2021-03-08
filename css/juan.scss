@@ -1,8 +1,33 @@
 $black: #000000;
 $blue: rgb(25, 25, 205);
+$gray: rgb(113, 113, 113);
 $boder-color:#dedede; 
+$gray-whitesmoke:whitesmoke;
 
 @media only screen and (min-width: 0px) { 
+
+            .mobile-icons-bottom {
+                width: auto;
+                background-color: $gray-whitesmoke;
+                height: auto;
+                padding: 15px 25px 15px;
+                border-top: thin solid #dedede;
+                    .icon-list {
+                        display: flex;
+                        align-items: start;
+                        justify-content: space-around;
+                        box-sizing: content-box;
+                            .icon-box {
+                                display: contents;
+                                    .icon {
+                                        display: block;
+                                            p {}
+                                    }
+                            }
+                    }
+            }
+
+
 
             .subnav-mobile {
                 display: flex;
@@ -215,8 +240,6 @@ $boder-color:#dedede;
                                             &:nth-of-type(2) {
                                                 margin: 5px 0 15px;
                                             }
-    font-size: 15px;
-    color: #454444;
                                     }
                     }
                     .card-article {
@@ -232,7 +255,7 @@ $boder-color:#dedede;
                             .card-topic {
                                 display: block;
                                 font-size: 14px;
-                                color: gray;
+                                color: $gray;
                             }
                             .card-btn {
                                 display: flex;
@@ -288,7 +311,29 @@ $boder-color:#dedede;
                     }
             }
 }
-@media only screen and (min-width: 800px) { 
+@media only screen and (min-width: 768px) { 
+            .icon-list {
+                display: grid;
+                box-sizing: border-box;
+                justify-content: stretch;
+                height: 400px;
+                position: fixed;
+                padding: 25px;
+                .icon-box {
+                    display: grid;
+                    gap: initial;
+                    justify-content: stretch;
+                        .icon {
+                            display: block;
+                                p {
+                                    font-size: 14px;
+                                    text-align: center;
+                                    color:$gray;
+                                }
+                        }
+                }
+            }
+
             .subnav-mobile{
                 display: none;
             }
