@@ -130,6 +130,15 @@ $gray-whitesmoke:whitesmoke;
                                 }
 
                             }
+                            #article-box.story { 
+                                display: block;
+                                    .title-title{
+                                        display: block;
+                                            H1 {
+                                                font-size: 55px !important;
+                                            }
+                                    }
+                            }
                             .story {
                                 display: block;
                                 /*padding: 20px;*/
@@ -353,19 +362,29 @@ $gray-whitesmoke:whitesmoke;
                         min-height: 650px;
                         border-top: none;
                         border-bottom: none;
+                        
                             .cover {
                                 display: block;
                                 border-radius: 5px 5px 0px 0;
 
                             }
-                            .story {
+                            #article-box.story {
                                 display: block;
                                 padding: 20px;
                                 .user {
                                     h3 {display: block;}
                                     p {display: block;}
                                 }
-                                h2 {display: block;}
+                                .title-title{
+                                    display: block !important;
+                                    h1 {
+                                        display:block;
+                                        font-size: 55px !important;}
+                                }
+                                h2 {
+                                    display: block;
+                                }
+                                
                                 .tag {display: block;}
                             }
                             .comments {
