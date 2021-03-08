@@ -3,6 +3,9 @@
     margin-top: 1rem;
     padding-left: 2rem;
   }
+  .More p {
+    color: gray;
+  }
   .redesSociales {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -26,6 +29,7 @@
     -webkit-animation-duration: 3s;
             animation-duration: 3s;
     margin-bottom: 2rem;
+    margin-top: 15px;
   }
   .pegatinas {
     display: -webkit-box;

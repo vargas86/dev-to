@@ -9,6 +9,9 @@
     .More{
         margin-top: 1rem;
         padding-left: 2rem;
+        p {
+            color:gray; 
+        }
 
     }
 
@@ -31,6 +34,7 @@
         cursor: pointer;
         animation-duration: 3s;
         margin-bottom: 2rem;
+        margin-top: 15px;
     }
 
     .pegatinas {
